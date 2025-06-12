@@ -1,46 +1,69 @@
 ---
 // @ts-ignore
 import { Icon } from "astro-icon/components";
+import Link from "@components/ui/link.astro";
 
-const features = [
-  {
-    title: "Bring Your Own Framework",
-    description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
-  },
-  {
-    title: "100% Static HTML, No JS",
-    description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
-  },
-  {
-    title: "On-Demand Components",
-    description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
-  },
-  {
-    title: "Broad Integration",
-    description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
-  },
-  {
-    title: "SEO Enabled",
-    description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
-  },
-  {
-    title: "Community",
-    description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
-  },
-];
 ---
+
+
+<div class="relative p-4">
+      <div class="max-w-screen-xl mx-auto">
+            <div class="rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+
+<section id="about" class="relative overflow-hidden">
+<div class="absolute inset-0 w-full h-full"></div>
+    <div class="container max-w-7xl mx-auto px-4 relative z-10">
+      <div class="text-center mb-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-50">Tiktokio <span class="text-orange-400 dark:text-orange-400">Tiktok Downloader</span> Online</h2>
+      
+      <div class="w-24 h-1 mx-auto bg-orange-400"></div>
+            <p class="mt-4 mx-auto text-lg text-gray-200">Tiktokio Video Downloader is a powerful tool designed to help you download and save your favorite Tiktok content with just a few clicks.
+                  TikTokio is best online Tiktok downloader to online download tiktok videos without watermark easily, download video from tiktok, free download tiktok video in Mp4. Best TikTok video Downloader Tool, download TikTok videos seamlessly and comfortably on your smartphone for free.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 items-stretch">
+            <div class="flex items-center justify-center">
+                  <div class="w-full h-full rounded-2xl overflow-hidden">
+                        <img src="/images/tiktok-downloader.avif" alt="Tiktok Video Downloader" class="object-contain w-full h-full" onerror="this.src='/images/tiktok-logo.avif'">
+                  </div>
+            </div>
+            <div class="flex flex-col justify-center">
+                  <div class="grid gap-7">
+                  <div class="feature-box bg-gradient-to-r from-pink-500/20 to-purple-500/20 p-6 rounded-xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300 transform hover:scale-105" data-v-ba9708fb=""><div class="flex items-start gap-4" data-v-ba9708fb=""><div class="flex-shrink-0" data-v-ba9708fb=""><div class="w-12 h-12 rounded-lg flex items-center justify-center text-pink-400" data-v-ba9708fb=""><svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-v-ba9708fb=""><path d="M12 16V8m0 8l3-3m-3 3l-3-3m3-5a1 1 0 110-2 1 1 0 010 2zm0 0v2m9 2a9 9 0 11-18 0 9 9 0 0118 0z" data-v-ba9708fb=""></path></svg></div></div><div data-v-ba9708fb=""><h3 class="font-medium text-white mb-1 text-xl" data-v-ba9708fb="">Fast Downloads</h3><p class="text-gray-200" data-v-ba9708fb="">Tiktok Video Downloader processes videos, photos, reels and stories in seconds with high-speed technology</p></div></div></div>
+                  
+      <div class="feature-box bg-gradient-to-r from-purple-500/20 to-blue-500/20 p-6 rounded-xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300 transform hover:scale-105">
+      <div class="flex items-start gap-4">
+            <div class="flex-shrink-0">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center text-purple-400">
+                  <svg data-v-ba9708fb="" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path data-v-ba9708fb="" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            </div>
+            </div>
+      <div>
+            <h3 class="font-medium text-white mb-1 text-xl">High Quality</h3>
+                  <p class="text-gray-200">Tiktok Video Downloader preserves original quality content without watermarks or compression</p>
+      </div>
+      </div>
+      </div>
+            <div class="feature-box bg-gradient-to-r from-blue-500/20 to-pink-500/20 p-6 rounded-xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300 transform hover:scale-105">
+      <div class="flex items-start gap-4">
+            <div class="flex-shrink-0">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center text-blue-400">
+            <svg data-v-ba9708fb="" xmlns="http://www.w3.org/2000/svg" class="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path data-v-ba9708fb="" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+      </div>
+      </div>
+      <div>
+            <h3 class="font-medium text-white mb-1 text-xl">All Content Types</h3>
+                  <p class="text-gray-200">Tiktok Video Downloader supports all content including photos, videos, reels, stories, IGTV and highlights</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+</section>
+
+
+
 
 <div class="mt-16 md:mt-0">
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
