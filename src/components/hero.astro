@@ -7,13 +7,16 @@ import { Icon } from "astro-icon/components";
 ---
 
 <main class="relative isolate px-6 pt-10 lg:px-8 pb-28 bg-cyan-400">
+
+
+<div class="relative isolate px-6 pt-10 lg:px-8 pb-28 bg-cyan-400">
   <div
     class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
   </div>
   <div class="mx-auto max-w-screen-xl another">
     <div class="text-center">
-      <h1 class="text-4xl font-bold tracking-tight text-black">TikTokio - TikTok Video Downloader</h1>
-      <p class="my-2 text-lg leading-8 text-black">Download TikTok Videos in MP3/MP4 & without Watermark</p>
+      <h1 class="text-4xl font-bold tracking-tight text-black">{heading}</h1>
+      <p class="my-2 text-lg leading-8 text-black">{subheading}</p>
     </div>
 
     <div class="pageTunerWrapper">
@@ -21,12 +24,12 @@ import { Icon } from "astro-icon/components";
         <div class="pageTunerWrapper__item">
           <a href="/" data-gtag-click="top_panel_video_click"
             ><img
-              src="https://newproject-one-nu.vercel.app/images/tiktok-video.svg"
+              src="/images/tiktok-video.svg"
               alt="Tiktok Video Downlaoder"
               width="24"
               height="24"
               loading="lazy"
-            /><span class="md:block">Video</span></a
+            /><span class="md:block hidden">Video</span></a
           >
         </div>
         <div class="pageTunerWrapper__item">
@@ -34,12 +37,12 @@ import { Icon } from "astro-icon/components";
             href="/tiktok-slideshow-downloader"
             data-gtag-click="top_panel_photo_click"
             ><img
-              src="https://newproject-one-nu.vercel.app/images/tiktok-photo.svg"
+              src="/images/tiktok-photo.svg"
               alt="Download Tiktok Photo and Slideshow"
               width="24"
               height="24"
               loading="lazy"
-            /><span class="md:block">Photo</span></a
+            /><span class="md:block hidden">Photo</span></a
           >
         </div>
         <div class="pageTunerWrapper__item">
@@ -47,12 +50,12 @@ import { Icon } from "astro-icon/components";
             href="/tiktok-story-downloader"
             data-gtag-click="top_panel_story_click"
             ><img
-              src="https://newproject-one-nu.vercel.app/images/story.svg"
+              src="/images/story.svg"
               alt="Toktok Story Downloader"
               width="24"
               height="24"
               loading="lazy"
-            /><span class="md:block">Story</span></a
+            /><span class="md:block hidden">Story</span></a
           >
         </div>
         <div class="pageTunerWrapper__item">
@@ -60,18 +63,18 @@ import { Icon } from "astro-icon/components";
             href="/tiktok-sound-downloader"
             data-gtag-click="top_panel_sound_click"
             ><img
-              src="https://newproject-one-nu.vercel.app/images/tiktok-audio.svg"
+              src="/images/tiktok-audio.svg"
               alt="Download Tiktok mp3"
               width="24"
               height="24"
               loading="lazy"
-            /><span class="md:block">Mp3</span></a
+            /><span class="md:block hidden">Mp3</span></a
           >
         </div>
       </div>
+    </div>
 
-
-<div class="relative max-w-4xl mx-auto mt-8">
+    <div class="relative max-w-4xl mx-auto mt-8">
       <form class="block items-center sm:space-x-4 sm:flex sub-form">
         <div class="relative flex-1">
           <input
@@ -94,7 +97,7 @@ import { Icon } from "astro-icon/components";
                 style="background: linear-gradient(54.09deg, #0348dd 2.03%, #8142f5 48.63%, #ee4dd4 96.22%), linear-gradient(0deg, rgba(201, 46, 255, .15), rgba(201, 46, 255, .15))"
                 type="button"
               >
-                <img src="https://newproject-one-nu.vercel.app/images/paste.svg" class="absolute top-[50%] translate-y-[-50%] left-[10px]" alt="Paste Link to Download Tiktok video">
+                <img src="/images/paste.svg" class="absolute top-[50%] translate-y-[-50%] left-[10px]" alt="Paste Link to Download Tiktok video">
                 <span
                   class="bg-[#F2D1FD] px-8 py-[12px] text-xl rounded-lg"
                   id="paste-btn"
@@ -105,6 +108,19 @@ import { Icon } from "astro-icon/components";
           </button>
         </div>
       </form>
+    </div>
+  </div>
+
+  <div class="loader items-center justify-center hidden bg-white">
+    <img src="/images/loader.svg" alt="Tiktok Downloader loader" />
+  </div>
+
+  <div class="bg-gradient-to-b from-gray-900 to-gray-800 py-16 px-4 sm:px-6 lg:px-8 main-div hidden">
+    <div class="max-w-7xl mx-auto">
+           <h2 class="text-2xl text-center mb-4 msg break-all">Download </h2>
+            <div class="flex flex-wrap justify-center gap-8">
+              <div class="bg-white rounded-xl gap-8 down-div grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1"></div>
+            </div>
     </div>
   </div>
 
