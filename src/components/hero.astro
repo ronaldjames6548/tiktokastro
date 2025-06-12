@@ -69,4 +69,43 @@ import { Icon } from "astro-icon/components";
           >
         </div>
       </div>
+
+
+<div class="relative max-w-4xl mx-auto mt-8">
+      <form class="block items-center sm:space-x-4 sm:flex sub-form">
+        <div class="relative flex-1">
+          <input
+            type="text"
+            placeholder="Paste tiktok video link here"
+            class="w-full pr-14 pl-4 outline-none rounded-md py-5 text-black placeholder-gray-500 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent down-url bg-[#F9E2D2]"
+            style="box-shadow: 0 0 2px rgb(255, 255, 255) !important;"
+            id="tiktok-url"
+          />
+          <button
+            class="px-8 py-[14px] bg-[#0950C8] text-xl text-white font-semibold rounded-lg shadow-lg transition-all duration-300focus:outline-none focus:ring-2 outline-none
+                    mt-10 sm:mt-0 w-full sm:w-auto send-btn cursor-pointer sm:absolute right-1 top-[50%] translate-y-[-50%]"
+            type="submit"
+            id="down-btn"
+          >
+            Download
+            <div>
+              <button
+                class="px-[2px] py-[12px] right-2 sm:right-[180px] absolute rounded-lg top-[20%] sm:top-[50%] translate-y-[-50%]"
+                style="background: linear-gradient(54.09deg, #0348dd 2.03%, #8142f5 48.63%, #ee4dd4 96.22%), linear-gradient(0deg, rgba(201, 46, 255, .15), rgba(201, 46, 255, .15))"
+                type="button"
+              >
+                <img src="/images/paste.svg" class="absolute top-[50%] translate-y-[-50%] left-[10px]" alt="Paste Link to Download Tiktok video">
+                <span
+                  class="bg-[#F2D1FD] px-8 py-[12px] text-xl rounded-lg"
+                  id="paste-btn"
+                  id="paste-btn">Paste</span
+                >
+              </button>
+            </div>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
     </main>
