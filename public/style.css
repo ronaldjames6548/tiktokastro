@@ -125,7 +125,6 @@ a {
   background-color: transparent;
 }
 a:-webkit-any-link {
-  color: -webkit-link;
   cursor: pointer;
   text-decoration: underline;
 }
@@ -141,7 +140,6 @@ user agent stylesheet img {
   overflow: clip;
 }
 user agent stylesheet a:-webkit-any-link {
-  color: -webkit-link;
   cursor: pointer;
 }
 .pageTunerWrapper__item a span,
