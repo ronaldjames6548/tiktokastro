@@ -13,14 +13,14 @@ export interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
+  "/opengraph.avif",
   Astro.site
 ).toString();
 
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
+  ? title + " | " + "Tiktokio"
   : "Astroship - Starter Template for Astro with Tailwind CSS";
 ---
 
