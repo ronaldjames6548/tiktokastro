@@ -1,14 +1,17 @@
 ---
 import Container from "@/components/container.astro";
 import Cta from "@/components/cta.astro";
-import Features from "@/components/features.astro";
+import Features from "@/components/dtvfeature.astro";
 import Hero from "@/components/hero.astro";
 import Logos from "@/components/logos.astro";
 import Layout from "@/layouts/Layout.astro";
 
----
+const title = `TikTokio - Download TikTok Videos Without Watermark TikTok Downloader`;
+const description = `TikTokio is Fastest TikTok video downloader! Save TikTok videos in HD with two taps, fast and free. With or without a watermark online. Start now for high-quality downloads!`;
 
-<Layout title="">
+---
+<Layout title={title} description={description}>
+
   <Container>
     <Hero />
     <Features />
