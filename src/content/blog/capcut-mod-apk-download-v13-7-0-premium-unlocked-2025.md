@@ -9,7 +9,7 @@ tags:
   - video
   - editor
 image:
-  src: https://tiktokio.cam/images/0k6ePWy.avif
+  src: /images/0k6ePWy.avif
   alt: Capcut
 snippet: Download CapCut Mod APK v13.7.0 (Premium Unlocked) 2025. Edit videos like a pro with no ads, no watermark, and premium features for free.
 
@@ -18,7 +18,7 @@ category: Videoeditor
 
 ---
 
-![img](https://tiktokio.cam/images/0k6ePWy.avif#center)
+![img](/images/0k6ePWy.avif#center)
 
 
 | App Name | [CapCut Mod APK](http://capckutapk.com) |
