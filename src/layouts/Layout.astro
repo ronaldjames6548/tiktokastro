@@ -12,7 +12,7 @@ export interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
-  "/opengraph.avif",
+  "/opengraph.jpg",
   Astro.site
 ).toString();
 
@@ -32,7 +32,7 @@ const makeTitle = title
     <meta name="generator" content={Astro.generator} />
 
 <!-- Global CSS -->
-		<link rel="stylesheet" href="/style.css" />
+		<link rel="stylesheet" href="/style.css"/>
 
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
